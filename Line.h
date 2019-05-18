@@ -10,6 +10,7 @@ class Line {
 			string request;
 			int status;
 			int bytes;
+			string lone;
 	public:
 			Line(string line);
 			string getIpAddress();
@@ -17,4 +18,5 @@ class Line {
 			string getRequest();
 			int getStatus();
 			int getBytes();
+			string getLone();
 };

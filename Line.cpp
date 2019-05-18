@@ -18,6 +18,7 @@ using namespace std;
 		request = line.substr(fifthSpace+1,(eightSpace-(fifthSpace+1)));
 		status = atoi(line.substr(eightSpace+1,(nineSpace-(eightSpace+1))).c_str());
 		bytes = atoi(line.substr(nineSpace+1).c_str());	
+		lone = line.substr(0);
 	}
 			
 	string Line::getIpAddress() 
@@ -43,4 +44,9 @@ using namespace std;
 	int Line::getBytes()
 	{
 		return bytes;
+	}
+	
+	string Line::getLone()
+	{
+		return lone;
 	}
